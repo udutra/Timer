@@ -29,8 +29,6 @@ public class Timer : MonoBehaviour {
         cents = (int)((tempoRegressivo - (int)tempoRegressivo) * 1000f);
 
         regressivoTimerText.text = string.Format("{0:00}:{1:00}:{2:000}", minutes, seconds, cents);
-
-        
     }
 
     private IEnumerator StartTimer() {
